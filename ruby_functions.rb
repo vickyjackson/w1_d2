@@ -1,4 +1,5 @@
 require('Date')
+
 #TEST 1
 def return_10
   return 20 / 2
@@ -54,7 +55,25 @@ def number_to_full_month_name(month)
   return result
 end
 
-#TEST 9 - ...
+#TEST 9 - 13
 def number_to_short_month_name(month)
   result = number_to_full_month_name(month)[0..2]
+  return result
+end
+
+#Futher tests
+
+def volume_of_cube(side_length)
+  result = side_length**3
+  return result
+end
+
+def volume_of_sphere(radius_length)
+  result = (4.to_f/3.to_f) * Math::PI * radius_length**3
+  return result.round(2)
+end
+
+def fahrenheit_to_celsius(fahrenheit)
+  result = (fahrenheit - 32) * 5.to_f/9.to_f
+  return result.round(2)
 end
