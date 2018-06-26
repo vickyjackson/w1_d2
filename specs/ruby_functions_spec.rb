@@ -94,7 +94,7 @@ class FunctionsTest < MiniTest::Test
     assert_equal(1, result)
   end
 
-  def test_volume_of_cube__lengthminus1()
+  def test_volume_of_cube__lengthminus999()
     result = volume_of_cube(-999)
     assert_equal(-997002999, result)
   end
